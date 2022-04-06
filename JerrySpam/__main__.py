@@ -1,4 +1,4 @@
-#RiZoeLXSpam By @TheRiZoeL
+
 
 import asyncio
 import sys
