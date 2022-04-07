@@ -10,21 +10,21 @@ HELP_PIC = "https://te.legra.ph/file/d1344663dfba5cadb595d.jpg"
 Jerry_Help = "__Click On Below Buttons for help__"
 
 
-@Riz.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Riz2.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Riz3.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Riz4.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Riz5.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Riz6.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Riz7.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Riz8.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Riz9.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Riz10.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Jerry.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Jerry2.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Jerry3.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Jerry4.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Jerry5.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Jerry6.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Jerry7.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Jerry8.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Jerry9.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Jerry10.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 async def help(event):
     if event.sender_id in SUDO_USERS:
        await event.client.send_file(event.chat_id,
                                   HELP_PIC,
-                                  caption=Riz_Help,
+                                  caption=Jerry_Help,
                                   buttons=[
            [
             Button.inline("• Spam •", data="spam"),
@@ -34,7 +34,7 @@ async def help(event):
             Button.inline("• Extra •", data="extra"),
            ],
            [    
-            Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/RiZoeLX")
+            Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/THEJERRY_NETWORK")
            ],
            ],
            )              
@@ -64,7 +64,7 @@ ii) {hl}leave : Type in the Group bot will auto leave that group
 **Packspam**: Sticker Pack Spam
 i) {hl}packspam (replying to any sticker)
 
-**© @RiZoeLX**
+**© @THEJERRY_NETWORK**
 """
 
                  
@@ -93,7 +93,7 @@ i) {hl}dreplyraid <replying to user>
 ii) {hl}dreplyraid <username>
 
 
-**© @RiZoeLX**
+**© @THEJERRY_NETWORK**
 """
 
 spam_msg = f"""
@@ -122,24 +122,24 @@ i) {hl}pornspam <count>
 command:
 i) {hl}hang <counter> (you can reply any message if you want bot to reply that message and do spamming)
 
-** © @RiZoeLX**
+** © @THEJERRY_NETWORK**
 """                     
            
            
-@Riz.on(events.CallbackQuery(pattern=r"help_back"))
-@Riz2.on(events.CallbackQuery(pattern=r"help_back"))
-@Riz3.on(events.CallbackQuery(pattern=r"help_back"))
-@Riz4.on(events.CallbackQuery(pattern=r"help_back"))
-@Riz5.on(events.CallbackQuery(pattern=r"help_back"))
-@Riz6.on(events.CallbackQuery(pattern=r"help_back"))
-@Riz7.on(events.CallbackQuery(pattern=r"help_back"))
-@Riz8.on(events.CallbackQuery(pattern=r"help_back"))
-@Riz9.on(events.CallbackQuery(pattern=r"help_back"))
-@Riz10.on(events.CallbackQuery(pattern=r"help_back"))
+@Jerry.on(events.CallbackQuery(pattern=r"help_back"))
+@Jerry2.on(events.CallbackQuery(pattern=r"help_back"))
+@Jerry3.on(events.CallbackQuery(pattern=r"help_back"))
+@Jerry4.on(events.CallbackQuery(pattern=r"help_back"))
+@Jerry5.on(events.CallbackQuery(pattern=r"help_back"))
+@Jerry6.on(events.CallbackQuery(pattern=r"help_back"))
+@Jerry7.on(events.CallbackQuery(pattern=r"help_back"))
+@Jerry8.on(events.CallbackQuery(pattern=r"help_back"))
+@Jerry9.on(events.CallbackQuery(pattern=r"help_back"))
+@Jerry10.on(events.CallbackQuery(pattern=r"help_back"))
 async def helpback(event):
    if event.query.user_id in SUDO_USERS:    
       await event.edit(
-            Riz_Help,
+            Jerry_Help,
             buttons=[
                 [
             Button.inline("Spam", data="spam"),
@@ -149,28 +149,28 @@ async def helpback(event):
             Button.inline("Extra cmds", data="extra"),
            ],
            [    
-            Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/RiZoeLX")
+            Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/THEJERRY_NETWORK")
            ],
            ],
         )           
    else:
         Alert = (
-                "Noob !! Make Your Own RiZoeL X Spam Bots !!"
+                "Noob !! Make Your Own Jerry T Spam Bots !!"
             )
         await event.answer(Alert, cache_time=0, alert=True)
       
            
                       
-@Riz.on(events.CallbackQuery(pattern=r"spam"))
-@Riz2.on(events.CallbackQuery(pattern=r"spam"))
-@Riz3.on(events.CallbackQuery(pattern=r"spam"))
-@Riz4.on(events.CallbackQuery(pattern=r"spam"))
-@Riz5.on(events.CallbackQuery(pattern=r"spam"))
-@Riz6.on(events.CallbackQuery(pattern=r"spam"))
-@Riz7.on(events.CallbackQuery(pattern=r"spam"))
-@Riz8.on(events.CallbackQuery(pattern=r"spam"))
-@Riz9.on(events.CallbackQuery(pattern=r"spam"))
-@Riz10.on(events.CallbackQuery(pattern=r"spam"))
+@Jerry.on(events.CallbackQuery(pattern=r"spam"))
+@Jerry2.on(events.CallbackQuery(pattern=r"spam"))
+@Jerry3.on(events.CallbackQuery(pattern=r"spam"))
+@Jerry4.on(events.CallbackQuery(pattern=r"spam"))
+@Jerry5.on(events.CallbackQuery(pattern=r"spam"))
+@Jerry6.on(events.CallbackQuery(pattern=r"spam"))
+@Jerry7.on(events.CallbackQuery(pattern=r"spam"))
+@Jerry8.on(events.CallbackQuery(pattern=r"spam"))
+@Jerry9.on(events.CallbackQuery(pattern=r"spam"))
+@Jerry10.on(events.CallbackQuery(pattern=r"spam"))
 async def help_spam(event):
    if event.query.user_id in SUDO_USERS:    
        await event.edit(
@@ -183,21 +183,21 @@ async def help_spam(event):
             ) 
    else:
         Alert = (
-                "Noob !! Make Your Own RiZoeL X Spam Bots !!"
+                "Noob !! Make Your Own Jerry T Spam Bots !!"
             )
         await event.answer(Alert, cache_time=0, alert=True)
                  
                                                        
-@Riz.on(events.CallbackQuery(pattern=r"raid"))
-@Riz2.on(events.CallbackQuery(pattern=r"raid"))
-@Riz3.on(events.CallbackQuery(pattern=r"raid"))
-@Riz4.on(events.CallbackQuery(pattern=r"raid"))
-@Riz5.on(events.CallbackQuery(pattern=r"raid"))
-@Riz6.on(events.CallbackQuery(pattern=r"raid"))
-@Riz7.on(events.CallbackQuery(pattern=r"raid"))
-@Riz8.on(events.CallbackQuery(pattern=r"raid"))
-@Riz9.on(events.CallbackQuery(pattern=r"raid"))
-@Riz10.on(events.CallbackQuery(pattern=r"raid"))
+@Jerry.on(events.CallbackQuery(pattern=r"raid"))
+@Jerry2.on(events.CallbackQuery(pattern=r"raid"))
+@Jerry3.on(events.CallbackQuery(pattern=r"raid"))
+@Jerry4.on(events.CallbackQuery(pattern=r"raid"))
+@Jerry5.on(events.CallbackQuery(pattern=r"raid"))
+@Jerry6.on(events.CallbackQuery(pattern=r"raid"))
+@Jerry7.on(events.CallbackQuery(pattern=r"raid"))
+@Jerry8.on(events.CallbackQuery(pattern=r"raid"))
+@Jerry9.on(events.CallbackQuery(pattern=r"raid"))
+@Jerry10.on(events.CallbackQuery(pattern=r"raid"))
 async def help_raid(event):
      if event.query.user_id in SUDO_USERS:
         await event.edit(
@@ -210,22 +210,22 @@ async def help_raid(event):
             )  
      else:
         Alert = (
-                "Noob !! Make Your Own RiZoeL X Spam Bots !!"
+                "Noob !! Make Your Own Jerry T Spam Bots !!"
             )
         await event.answer(Alert, cache_time=0, alert=True)
        
 
 
-@Riz.on(events.CallbackQuery(pattern=r"extra"))
-@Riz2.on(events.CallbackQuery(pattern=r"extra"))
-@Riz3.on(events.CallbackQuery(pattern=r"extra"))
-@Riz4.on(events.CallbackQuery(pattern=r"extra"))
-@Riz5.on(events.CallbackQuery(pattern=r"extra"))
-@Riz6.on(events.CallbackQuery(pattern=r"extra"))
-@Riz7.on(events.CallbackQuery(pattern=r"extra"))
-@Riz8.on(events.CallbackQuery(pattern=r"extra"))
-@Riz9.on(events.CallbackQuery(pattern=r"extra"))
-@Riz10.on(events.CallbackQuery(pattern=r"extra"))
+@Jerry.on(events.CallbackQuery(pattern=r"extra"))
+@Jerry2.on(events.CallbackQuery(pattern=r"extra"))
+@Jerry3.on(events.CallbackQuery(pattern=r"extra"))
+@Jerry4.on(events.CallbackQuery(pattern=r"extra"))
+@Jerry5.on(events.CallbackQuery(pattern=r"extra"))
+@Jerry6.on(events.CallbackQuery(pattern=r"extra"))
+@Jerry7.on(events.CallbackQuery(pattern=r"extra"))
+@Jerry8.on(events.CallbackQuery(pattern=r"extra"))
+@Jerry9.on(events.CallbackQuery(pattern=r"extra"))
+@Jerry10.on(events.CallbackQuery(pattern=r"extra"))
 async def help_extra(event):
    if event.query.user_id in SUDO_USERS:
         await event.edit(
@@ -238,7 +238,7 @@ async def help_extra(event):
             )
    else:
         Alert = (
-                "Noob !! Make Your Own RiZoeL X Spam Bots !!"
+                "Noob !! Make Your Own Jerry T Spam Bots !!"
             )
         await event.answer(Alert, cache_time=0, alert=True)
 
