@@ -3,48 +3,48 @@ import asyncio
 import sys
 import git
 import heroku3
-from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, rizoelversion
-from RiZoeLXSpam import CMD_HNDLR as hl
+from JerrySpam import Jerry, Jerry2, Jerry3, Jerry4, Jerry5, Jerry6, Jerry7, Jerry8, Jerry9, Jerry10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, Jerryversion
+from JerrySpam import CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
-from RiZoeLXSpam import ALIVE_PIC
+from JerrySpam import ALIVE_PIC
 from telethon import events, version, Button
 from telethon.tl.custom import button
 from time import time
 from datetime import datetime
 
-RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
+RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/d1344663dfba5cadb595d.jpg"
   
 
-rizoel = "✯ 𝗥𝗶𝗭𝗼𝗲𝗟𝗫𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✯\n\n"
-rizoel += f"═══════════════════\n"
-rizoel += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
-rizoel += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
-rizoel += f"• **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"
-rizoel += f"═══════════════════\n\n"   
+jerry = "ᴊᴇʀʀʏ ꜱᴘᴀᴍ ʙᴏᴛ ʜᴇʀᴇ \n\n"
+jerry += f"═══════════════════\n"
+jerry += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
+jerry += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
+jerry += f"• **ᴊᴇʀʀʏ ꜱᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{Jerryversion}`\n"
+jerry += f"═══════════════════\n\n"   
 
                                   
-@Riz.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Riz2.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Riz3.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Riz4.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Riz5.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Riz6.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Riz7.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Riz8.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Riz9.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Riz10.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Jerry.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Jerry2.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Jerry3.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Jerry4.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Jerry5.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Jerry6.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Jerry7.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Jerry8.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Jerry9.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Jerry10.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
 async def alive(event):
   if event.sender_id in SUDO_USERS:
      await event.client.send_file(event.chat_id,
-                                  RIZ_PIC,
+                                  JERRY_PIC,
                                   caption=rizoel,
                                   buttons=[
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/RiZoeLX"),
-        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/DNHxHELL")
+        Button.url("ᴄʜᴀɴɴᴇʟ", "https://THEJERRY_NETWORK"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/TheJerrySupport")
         ],
         [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/MrRizoel/SpamBot")
+        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Alone45-45/JERRY-SPAMBOT")
         ]
         ]
         )
@@ -76,16 +76,16 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@Riz.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Riz2.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Riz3.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Riz4.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Riz5.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Riz6.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Riz7.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Riz8.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Riz9.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Riz10.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Jerry.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Jerry2.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Jerry3.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Jerry4.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Jerry5.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Jerry6.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Jerry7.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Jerry8.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Jerry9.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Jerry10.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
@@ -93,62 +93,62 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"▒█▀▀█ ▒█▀▀▀█ ▀▀█▀▀\n▒█▀▀▄ ▒█░░▒█ ░▒█░░\n▒█▄▄█ ▒█▄▄▄█ ░▒█░░\n\nϟ ʀɪᴢᴏᴇʟ X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs")
+        await event.edit(f"▒█▀▀█ ▒█▀▀▀█ ▀▀█▀▀\n▒█▀▀▄ ▒█░░▒█ ░▒█░░\n▒█▄▄█ ▒█▄▄▄█ ░▒█░░\n\nᴊᴇʀʀʏ ᴛ ꜱᴘᴀᴍ ⸙ `{ms}` ᴍs")
         
         
 
-@Riz.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Riz2.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Riz3.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Riz4.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Riz5.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Riz6.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Riz7.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Riz8.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Riz9.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Riz10.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Jerry.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Jerry2.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Jerry3.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Jerry4.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Jerry5.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Jerry6.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Jerry7.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Jerry8.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Jerry9.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Jerry10.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "**Restarting Your RiZoeL X Spam**.. Please Wait Until It Starts Again"
+        text = "**Restarting Your Jerry T Spam**.. Please Wait Until It Starts Again"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
-            await Riz.disconnect()
+            await Jerry.disconnect()
         except Exception:
             pass
         try:
-            await Riz2.disconnect()
+            await Jerry2.disconnect()
         except Exception:
             pass
         try:
-            await Riz3.disconnect()
+            await Jerry3.disconnect()
         except Exception:
             pass
         try:
-            await Riz4.disconnect()
+            await Jerry4.disconnect()
         except Exception:
             pass
         try:
-            await Riz5.disconnect()
+            await Jerry5.disconnect()
         except Exception:
             pass
         try:
-            await Riz6.disconnect()
+            await Jerry6.disconnect()
         except Exception:
             pass
         try:
-            await Riz7.disconnect()
+            await Jerry7.disconnect()
         except Exception:
             pass
         try:
-            await Riz8.disconnect()
+            await Jerry8.disconnect()
         except Exception:
             pass
         try:
-            await Riz9.disconnect()
+            await Jerry9.disconnect()
         except Exception:
             pass
         try:
-            await Riz10.disconnect()
+            await Jerry10.disconnect()
         except Exception:
             pass
 
@@ -160,11 +160,11 @@ Heroku = heroku3.from_key(HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
 sudousers = os.environ.get("SUDO_USER", None)
 
-@Riz.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
+@Jerry.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
     if event.sender_id == OWNER_ID:
         ok = await event.reply("Adding user as a sudo...")
-        rizoel = "SUDO_USER"
+        jerry = "SUDO_USER"
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
         else:
@@ -181,8 +181,8 @@ async def tb(event):
             newsudo = f"{sudousers} {target}"
         else:
             newsudo = f"{target}"
-        await ok.edit(f"**Added `{target}` ** as a sudo user 🔱 Restarting.. Please wait a minute...")
-        heroku_var[rizoel] = newsudo   
+        await ok.edit(f"**Added `{target}` ** as a sudo user ⚠️ Restarting.. Please wait a minute...")
+        heroku_var[jerry] = newsudo   
    
      
 async def get_user(event):
