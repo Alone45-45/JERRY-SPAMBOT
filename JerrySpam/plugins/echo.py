@@ -6,10 +6,10 @@ import requests
 from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from JerrySpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS, OWNER_ID
+from JerrySpam import Jerry, Jerry2, Jerry3, Jerry4, Jerry5, Jerry6, Jerry7, Jerry8, Jerry9, Jerry10, SUDO_USERS, OWNER_ID
 
-from RiZoeLXSpam import CMD_HNDLR as hl
-from RiZoeLXSpam.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
+from JerrySpam import CMD_HNDLR as hl
+from JerrySpam.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
 from resources.data import RiZoeLX
 
 
