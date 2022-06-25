@@ -3,8 +3,8 @@ import os
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, Button
 from telethon.tl.custom import button
-from .. import Riz, Riz2, Riz3, Riz4, Riz5, Riz6, Riz7, Riz8, Riz9, Riz10, ALIVE_PIC, OWNER_ID
-from RiZoeLXSpam.plugins.help import *
+from .. import Jerry, Jerry2, Jerry3, Jerry4, Jerry5, Jerry6, Jerry7, Jerry8, Jerry9, Jerry10, ALIVE_PIC, OWNER_ID
+from JerrySpam.plugins.help import *
 
 
 RIZ_IMG = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
