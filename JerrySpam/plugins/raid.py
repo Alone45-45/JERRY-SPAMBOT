@@ -35,7 +35,7 @@ async def spam(e):
             user = str(jerry[1])
             a = await e.client.get_entity(user)
             g = a.id
-            if int(g) in RiZoeLX:
+            if int(g) in JerryT:
                 text = f"I can't raid on @song_hye_kyoo Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) == OWNER_ID:
