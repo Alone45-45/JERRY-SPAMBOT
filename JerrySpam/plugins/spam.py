@@ -177,7 +177,7 @@ async def pspam(e):
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        JerryT = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(JerryT) == 1:
             counter = int(JerryT[0])
             if int(e.chat_id) in GROUP:
