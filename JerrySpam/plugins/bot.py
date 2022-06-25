@@ -3,7 +3,7 @@ import asyncio
 import sys
 import git
 import heroku3
-from JerrySpam import Jerry, Jerry2, Jerry3, Jerry4, Jerry5, Jerry6, Jerry7, Jerry8, Jerry9, Jerry10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, Jerryversion
+from JerrySpam import Jerry, Jerry2, Jerry3, Jerry4, Jerry5, Jerry6, Jerry7, Jerry8, Jerry9, Jerry10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY
 from JerrySpam import CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
 from JerrySpam import ALIVE_PIC
