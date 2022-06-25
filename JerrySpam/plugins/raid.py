@@ -7,7 +7,7 @@ from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from JerrySpam import Jerry, Jerry2, Jerry3, Jerry4, Jerry5, Jerry6, Jerry7, Jerry8, Jerry9, Jerry10, SUDO_USERS, OWNER_ID
-from resources.data import RAID, REPLYRAID, RiZoeLX
+from resources.data import RAID, REPLYRAID, JerryT
 from JerrySpam import CMD_HNDLR as hl
 
 
